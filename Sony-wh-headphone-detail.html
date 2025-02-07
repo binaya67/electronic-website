@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ElectroTech</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Product Details Section -->
+<div class="products-whole"><section class="products">
+    <h2>Product Detail</h2>
+    <div class="product-list">
+        <div class="product-item" data-category="headphone" data-price="33">
+            <img src="images/sony-wh-headphone.jpg" alt="headphone">
+            <h3>Sony-wh-headphone</h3>
+            <p>Premium sound quality for music lovers.</p>
+            <p><strong>$33</strong></p>
+            <div class="rating">★★★★☆</div>
+            <div class="quantity-selector">
+                <button id="decrease-quantity">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button id="increase-quantity">+</button>
+            </div>
+            <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Additional Product Information -->
+    <div class="additional-info">
+        <h4>Specifications:</h4>
+            <ul>
+                <li>Play anywhere can! Using 3.5mm JACK TRRS, there are only 1 plug only but there are 2 functions already (audio + mic). This HQ54 is suitable for those of you who like to play mobile games and can plug directly. In addition, this HQ54 can also be used in PC, XBOX, and PS.Lightweight But Durable
+                    With a weight of only 203grams, but remains flexible and very durable</li>
+                <li>It is equipped with a clear audio, so when playing your friends' games can still hear clearly your voice.Mars II HQ54 is equipped with audio control that can make it easier for you to easily set any audio only through the remote control that is on the headset cable</li> 
+                <li>Dimension Microphone: 6x5mm</li>
+                <li>Sensitivity Microphone: -38±2dB</li>
+                <li>Directivity Microphone: Omni Directional</li>
+                <li>Speaker Diameter: 40mm</li>
+                <li>Sensitivity Speaker: 121Db</li>
+                <li>Impendance Speaker : 32 ± 15%</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

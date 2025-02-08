@@ -1,26 +1,294 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-        <div class="banner-content">
-        <h3>Summer Sale!</h3>
-        <p>Get up to 50% off on selected items. Limited time only!</p>
-        
-        <!-- Slide Container -->
-        <div class="slide-container">
-            <!-- Slide Images -->
-            <div class="slides">
-                <div class="slide"><img src="images/keyboard.jpg" alt="Keyboard"></div>
-                <div class="slide"><img src="images/laptop.jpg" alt="Laptop"></div>
-                <div class="slide"><img src="images/smartphone.jpg" alt="Smartphone"></div>
-                <div class="slide"><img src="images/headphones.jpg" alt="Headphones"></div>
-            </div>
-            
-            <!-- Navigation Arrows -->
-            <button class="arrow left-arrow">&larr;</button>
-            <button class="arrow right-arrow">&rarr;</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Home</title>
+    <style>
+        /* Hero Section Animation */
+.hero-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    animation: slideIn 1.5s ease-out;
+}
+
+.hero-content p {
+    animation: fadeIn 2s ease-out;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Promo Banner Slider Animation */
+.slide-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Product Card Hover Animation */
+.product-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Fade-In Animation */
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
         </div>
-        <script src="scripts/hawa.js"></script>
-    </body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Animation -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Electronics Store</h1>
+            <p>Discover the latest gadgets and electronics at unbeatable prices.</p>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+    
+    <!-- Promo Banner with Slider Animation -->
+    <section class="promo-banner">
+        <div class="banner-content">
+            <h3>Summer Sale!</h3>
+            <p>Get up to 50% off on selected items. Limited time only!</p>
+            
+            <!-- Slide Container -->
+            <div class="slide-container">
+                <!-- Slide Images -->
+                <div class="slides">
+                    <div class="slide"><img src="images/mechanical-keyboard.jpg" alt="Keyboard"></div>
+                    <div class="slide"><img src="images/dell-12-laptop.jpg" alt="Laptop"></div>
+                    <div class="slide"><img src="images/Samsung-Galaxy-S23-Ultra-smartphone.jpg" alt="Smartphone"></div>
+                    <div class="slide"><img src="images/ryte-headphone.jpg" alt="Headphones"></div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="arrow left-arrow">&larr;</button>
+                <button class="arrow right-arrow">&rarr;</button>
+            </div>
+
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section with Hover Animations -->
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item" data-category="laptops" data-price="99">
+                <img src="images/dell-12-laptop.jpg" alt="Laptop">
+                <h3>Dell-12-laptop</h3>
+                <p>High-performance laptops for all your needs.</p>
+                <p><strong>$99</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button class="decrease-quantity">-</button>
+                    <input type="number" class="quantity" value="1" min="1" max="10">
+                    <button class="increase-quantity">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+                <a href="dell-12-laptop-detail.html" class="view-details">View Details</a>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+        <div>
+            <button class="more-products-option"><a href="products.html">More products..</a></button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Fade-In Animation -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"ElectroTech has the best products and customer service!"</p>
+                <p class="customer-name">- John Doe</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Fast delivery and high-quality electronics. Highly recommended!"</p>
+                <p class="customer-name">- Jane Smith</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ElectroTech is your one-stop shop for the latest electronics and gadgets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-product-name"></h2>
+            <img id="modal-product-image" src="" alt="">
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price"></p>
+            <button class="add-to-cart" id="modal-add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        // Slider Functionality
+const slides = document.querySelector('.slides');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+let currentSlide = 0;
+
+rightArrow.addEventListener('click', () => {
+    if (currentSlide < 3) {
+        currentSlide++;
+    } else {
+        currentSlide = 0;
+    }
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+});
+
+leftArrow.addEventListener('click', () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+    } else {
+        currentSlide = 3;
+    }
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+});
+
+// Testimonials Fade-In Animation
+const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.5 });
+
+testimonialCards.forEach(card => observer.observe(card));
+    </script>
+</body>
 </html>

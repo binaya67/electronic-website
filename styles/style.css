@@ -594,3 +594,60 @@ footer p {
 .additional-info{
     text-align: left;
 }
+/* Auth Section Styles */
+.auth-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.auth-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+.auth-section p {
+    margin-top: 15px;
+}
+
+.auth-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-section a:hover {
+    text-decoration: underline;
+}

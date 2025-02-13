@@ -84,3 +84,4 @@ document.querySelectorAll('#decrease-quantity').forEach(button => {
 // Load the cart from localStorage and update the cart count
 updateCartCount();
 
+

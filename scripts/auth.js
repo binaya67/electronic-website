@@ -1,3 +1,4 @@
+
 // auth.js
 
 // Check if users exist in local storage, if not, initialize an empty array

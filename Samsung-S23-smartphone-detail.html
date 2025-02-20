@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ElectroTech</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Product Details Section -->
+<div class="products-whole"><section class="products">
+    <h2>Product Detail</h2>
+    <div class="product-list">
+        <div class="product-item" data-category="smartphone" data-price="78">
+            <img src="images/Samsung-Galaxy-S23-Ultra-smartphone.jpg" alt="smartphone">
+            <h3>Samsung-S23-smartphone</h3>
+            <p>Latest smartphones with cutting-edge technology.</p>
+            <p><strong>$78</strong></p>
+            <div class="rating">★★★★☆</div>
+            <div class="quantity-selector">
+                <button id="decrease-quantity">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button id="increase-quantity">+</button>
+            </div>
+            <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Additional Product Information -->
+    <div class="additional-info">
+        <h4>Specifications:</h4>
+            <ul>
+                <li>6.8inch Dynamic AMOLED 2x display</li>
+                <li>120Hz refresh rate 505 PPI</li> 
+                <li>Corning Gorilla Glass ARMOR protection On-screen fingerprint sensor</li> 
+                <li>45W fast charging, wireless charging Type-C charger, NFC, GPS, Bluetooth support, Wi-Fi</li> 
+                <li>Android OS, Octa-core processor</li>
+                <li>2160p video resolution, 4G/3G/2G/3.5G/5G network connections Nano SIM slots</li>
+                <li>5000 mAh battery capacity, on-screen fingerprint sensor wifi 7 , E-SIM </li> 
+                <li>IP 68 WATER AND DUST RESISTANT ( upto 1.5 m for 30 min)</li>
+                <li> Snapdragon 8 gen 3 for galaxy</li>  
+                <li>Android 14 one ui 6.1 7 OS update and security updates</li> 
+                <li>200 MP Wide , 50 MP 5x telephoto ,10 MP 3xTELEPHOTO,12 MP ultra wide</li>
+                <li>BREAKAGE INSURANCE for 1 Year</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

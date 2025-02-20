@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Electronics Store</h1>
+            <p>Discover the latest gadgets and electronics at unbeatable prices.</p>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+    
+
+    
+    <section class="promo-banner">
+        <div class="banner-content">
+            <h3>Summer Sale!</h3>
+            <p>Get up to 50% off on selected items. Limited time only!</p>
+            <div class="slide-container">
+                <div class="slides">
+                    <div class="slide"><img src="images/mechanical-keyboard.jpg" alt="Keyboard"></div>
+                    <div class="slide"><img src="images/dell-12-laptop.jpg" alt="Laptop"></div>
+                    <div class="slide"><img src="images/Samsung-Galaxy-S23-Ultra-smartphone.jpg" alt="Smartphone"></div>
+                    <div class="slide"><img src="images/ryte-headphone.jpg" alt="Headphones"></div>
+                </div>
+                <button class="arrow left-arrow">&larr;</button>
+                <button class="arrow right-arrow">&rarr;</button>
+            </div>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+    
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item" data-category="laptops" data-price="99">
+                <img src="images/dell-12-laptop.jpg" alt="Laptop">
+                <h3>Dell-12-laptop</h3>
+                <p>High-performance laptops for all your needs.</p>
+                <p><strong>$99</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                </div>
+                <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                <a href="dell-12-laptop-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" >
+                <img src="images/Samsung-Galaxy-S23-Ultra-smartphone.jpg" alt="Smartphone">
+                <h3>Samsung-S23-smartphone</h3>
+                <p>Latest smartphones with cutting-edge technology.</p>
+                <p><strong>$78</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Samsung-S23-smartphone-detail.html" class="view-details">View Details</a>
+                
+            </div>
+            <div class="product-item">
+                <img src="images/ryte-headphone.jpg" alt="Headphone">
+                <h3>Ryte-headphone</h3>
+                <p>Premium sound quality for music lovers.</p>
+                <p><strong>$28</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Ryte-headphone-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item">
+                <img src="images/canon-camera.jpg" alt="Camera">
+                <h3>Canon-camera</h3>
+                <p>Premium image quality.</p>
+                <p><strong>$79</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Canon-camera-detail.html" class="view-details">View Details</a>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+        <div>
+            <button class="more-products-option"><a href="products.html">More products..</a></button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"ElectroTech has the best products and customer service!"</p>
+                <p class="customer-name">- John Doe</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Fast delivery and high-quality electronics. Highly recommended!"</p>
+                <p class="customer-name">- Jane Smith</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ElectroTech is your one-stop shop for the latest electronics and gadgets.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-product-name"></h2>
+            <img id="modal-product-image" src="" alt="">
+            <p id="modal-product-description"></p>
+            <p id="modal-product-price"></p>
+            <button class="add-to-cart" id="modal-add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+<script>
+   
+</script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>

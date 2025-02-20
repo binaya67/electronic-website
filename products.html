@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Products</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart  (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Product Filters and Search -->
+<section class="product-tools">
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="filters">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="laptop">Laptop</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="headphone">Headphone</option>
+            <option value="camera">Camera</option>
+            <option value="keyboard">Keyboard</option>
+        </select>
+        <select id="price-filter">
+            <option value="all">All Prices</option>
+            <option value="0-50">$0 - $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-500">$100 - $500</option>
+            <option value="500+">$500+</option>
+        </select>
+    </div>
+</section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item" data-category="laptop" data-price="99">
+                <img src="images/dell-12-laptop.jpg" alt="Laptop">
+                <h3>Dell-12-laptop</h3>
+                <p>High-performance laptops for all your needs.</p>
+                <p><strong>$99</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="dell-12-laptop-detail.html" class="view-details">View Details</a>
+                  
+                
+            </div>
+            <div class="product-item" data-category="laptop" data-price="111">
+                <img src="images/dell-inspiron-15-laptop.jpg" alt="Laptop">
+                <h3>Dell-inspiron-15-laptop</h3>
+                <p>High-performance laptops for all your needs.</p>
+                <p><strong>$111</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="dell-inspiron-15-laptop-detail.html" class="view-details">View Details</a>
+                  
+                
+            </div>
+            <div class="product-item" data-category="laptop" data-price="105">
+                <img src="images/acer-b115-laptop.jpg" alt="Laptop">
+                <h3>Acer-b115-laptop</h3>
+                <p>High-performance laptops for all your needs.</p>
+                <p><strong>$105</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="acer-b115-laptop-detail.html" class="view-details">View Details</a>
+                  
+                
+            </div>
+            
+            
+            
+           
+            <div class="product-item" data-category="smartphone" data-price="78">
+                <img src="images/Samsung-Galaxy-S23-Ultra-smartphone.jpg" alt="Smartphone">
+                <h3>Samsung-S23-smartphone</h3>
+                <p>Latest smartphones with cutting-edge technology.</p>
+                <p><strong>$78</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Samsung-S23-smartphone-detail.html" class="view-details">View Details</a>
+                
+            </div>
+            <div class="product-item" data-category="smartphone" data-price="82">
+                <img src="images/iphone-16-pro-smartphone.jpg" alt="Smartphone">
+                <h3>Iphone-16-pro-smartphone</h3>
+                <p>Latest smartphones with cutting-edge technology.</p>
+                <p><strong>$82</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Iphone-16-pro-smartphone.html" class="view-details">View Details</a>
+                
+            </div>
+            <div class="product-item" data-category="smartphone" data-price="58">
+                <img src="images/oppo-a57-smartphone.jpg" alt="Smartphone">
+                <h3>Oppo-a57-smartphone</h3>
+                <p>Latest smartphones with cutting-edge technology.</p>
+                <p><strong>$58</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Oppo-a57-smartphone.html" class="view-details">View Details</a>
+                
+            </div>
+            <div class="product-item" data-category="smartphone" data-price="61">
+                <img src="images/vivo-v25-smartphone.jpg" alt="Smartphone">
+                <h3>Vivo-v25-smartphone</h3>
+                <p>Latest smartphones with cutting-edge technology.</p>
+                <p><strong>$61</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Vivo-v25-smartphone.html" class="view-details">View Details</a>
+                
+            </div>
+            <div class="product-item" data-category="headphone" data-price="28">
+                <img src="images/ryte-headphone.jpg" alt="Headphone">
+                <h3>Ryte-headphone</h3>
+                <p>Premium sound quality for music lovers.</p>
+                <p><strong>$28</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Ryte-headphone-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="headphone" data-price="33">
+                <img src="images/sony-wh-headphone.jpg" alt="Headphone">
+                <h3>Sony-wh-headphone</h3>
+                <p>Premium sound quality for music lovers.</p>
+                <p><strong>$33</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Sony-wh-headphone-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="headphone" data-price="39">
+                <img src="images/apple-airpods-max-headphone.jpg" alt="Headphone">
+                <h3>Apple-airpods-max-headphone</h3>
+                <p>Premium sound quality for music lovers.</p>
+                <p><strong>$39</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Apple-airpods-max-headphone-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="headphone" data-price="30">
+                <img src="images/boat-art-headphone.jpg" alt="Headphone">
+                <h3>Boat-art-headphone</h3>
+                <p>Premium sound quality for music lovers.</p>
+                <p><strong>$30</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Boat-art-headphone-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="camera" data-price="79">
+                <img src="images/canon-camera.jpg" alt="Camera">
+                <h3>Canon-camera</h3>
+                <p>Premium image quality.</p>
+                <p><strong>$79</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Canon-camera-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="camera" data-price="77">
+                <img src="images/nikon-camera.jpg" alt="Camera">
+                <h3>Nikon-camera</h3>
+                <p>Premium image quality.</p>
+                <p><strong>$77</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Nikon-camera-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="camera" data-price="71">
+                <img src="images/sony-camera.jpg" alt="Camera">
+                <h3>Sony-camera</h3>
+                <p>Premium image quality.</p>
+                <p><strong>$71</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Sony-camera-detail.html" class="view-details">View Details</a>
+            </div>
+
+            <div class="product-item" data-category="keyboard" data-price="12">
+                <img src="images/mechanical-keyboard.jpg" alt="Keyboards">
+                <h3>Mechanical-keyboard</h3>
+                <p>Premium build quality.</p>
+                <p><strong>$12</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="mechanical-keyboard-detail.html" class="view-details">View Details</a>
+            </div>
+            <div class="product-item" data-category="keyboard" data-price="15">
+                <img src="images/esport-led-keyboard.jpg" alt="Keyboards">
+                <h3>Esport-led-keyboard</h3>
+                <p>Premium build quality.</p>
+                <p><strong>$15</strong></p>
+                <div class="rating">★★★★☆</div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10">
+                    <button id="increase-quantity">+</button>
+                  </div>
+                  <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+                  <a href="Esport-led-keyboard-detail.html" class="view-details">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+    
+
+</body>
+</html>

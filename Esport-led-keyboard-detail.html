@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ElectroTech</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Product Details Section -->
+<div class="products-whole"><section class="products">
+    <h2>Product Detail</h2>
+    <div class="product-list">
+        <div class="product-item" data-category="keyboard" data-price="15">
+            <img src="images/esport-led-keyboard.jpg" alt="keyboard">
+            <h3>Esport-led-keyboard</h3>
+            <p>Premium build quality.</p>
+            <p><strong>$15</strong></p>
+            <div class="rating">★★★★☆</div>
+            <div class="quantity-selector">
+                <button id="decrease-quantity">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button id="increase-quantity">+</button>
+            </div>
+            <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Additional Product Information -->
+    <div class="additional-info">
+        <h4>Specifications:</h4>
+        <ul>
+            <li>Durable</li>
+            <li>Easy To Use</li>
+            <li>Good Quality Product</li>
+            <li>Regular slim keyboard</li>
+            <li>Comfortable keypad</li>
+            <li>High quality</li>
+            <li>Lifetime of keys up to 100,000,000 times</li>
+            <li>Excellent flexibility</li>
+            <li>Multi-language design</li>
+            <li>System support: applicable to all kinds of computer operating systems</li>
+        </ul>
+    </div>
+</section>
+</div>
+    
+    <footer>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

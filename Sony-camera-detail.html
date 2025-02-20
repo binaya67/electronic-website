@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ElectroTech</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroTech</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Product Details Section -->
+<div class="products-whole"><section class="products">
+    <h2>Product Detail</h2>
+    <div class="product-list">
+        <div class="product-item" data-category="camera" data-price="71">
+            <img src="images/sony-camera.jpg" alt="camera">
+            <h3>Sony-camera</h3>
+            <p>Premium image quality.</p>
+            <p><strong>$71</strong></p>
+            <div class="rating">★★★★☆</div>
+            <div class="quantity-selector">
+                <button id="decrease-quantity">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10">
+                <button id="increase-quantity">+</button>
+            </div>
+            <button id="add-to-cart" class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Additional Product Information -->
+    <div class="additional-info">
+        <h4>Specifications:</h4>
+            <ul>
+                <li>Brand: Canon</li>
+                <li>Model: EOS 3000D</li> 
+                <li>18-megapixel APS-C-size CMOS sensor & DIGIC 4+ image processor</li> 
+                <li>9-point AF with 1 centre cross-type AF point</li>
+                <li>Standard ISO 100 - 6400 (expandable to 12800)</li> 
+                <li>Wi-Fi supported</li> 
+                <li>Battery Life (Approx.): 410 shots</li> 
+                <li>Camera Weight: 436 grams</li> 
+                <li>Built-in flash: Yes;</li> 
+                <li>External Flash support: Yes</li> 
+                <Li>Compatible Lenses: All EF and EF-S lenses</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ElectroTech. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
